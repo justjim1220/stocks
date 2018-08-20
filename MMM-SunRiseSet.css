@@ -1,0 +1,86 @@
+/* Copy and paste any or all of these css entries into your custom.css file inside your
+ * css folder. The functions are annotated to make things as easy as possible for you.
+ * Use any colors you want! Go to - "http://htmlcolorcodes.com/color-picker/"
+ * Pick your color, copy and paste the HEX number. Example - #62FF00 = bright green.
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+
+.MMM-SunRiseSet {
+  width: 1000px;
+  margin-right: 50px;
+}
+
+.MMM-SunRiseSet .header {
+  width: 900px;
+  text-align: center;
+  text-transform: none;
+  font-size: 40px;
+  font-family: "Bubbler One, cursive";
+  font-weight: bolder;
+  border: 2px solid yellow;
+  border-radius: 25px;
+  line-height: 55px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: yellow;
+}
+
+.MMM-SunRiseSet .img {            
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  float: center;
+}
+
+.MMM-SunRiseSet .sunrise {
+  color: white;               /* sunrise color. Default is white. */
+	text-align: center;
+}
+
+.MMM-SunRiseSet .sunset {
+  color: white;               /* sunset color. Default is white. */
+	display: none;
+}
+
+.MMM-SunRiseSet .solar_noon {
+  color: white;               /* solar_noon color. Default is white. */
+	display: none;
+}
+
+.MMM-SunRiseSet .day_length {
+  color: white;               /* day_length color. Default is white. */
+	text-align: center;
+}
+
+.MMM-SunRiseSet .civil_twilight_begin {
+  color: white;               /* civil_twilight_begin color. Default is white. */
+  display: none;
+}
+
+.MMM-SunRiseSet .civil_twilight_end {
+  color: white;               /* civil_twilight_end color. Default is white. */
+  display: none;
+}
+
+.MMM-SunRiseSet .nautical_twilight_begin {
+  color: white;               /* nautical_twilight_begin color. Default is white. */
+  display: none;
+}
+
+.MMM-SunRiseSet .nautical_twilight_end {
+  color: white;               /* nautical_twilight_end color. Default is white. */
+  display: none;
+}
+
+.MMM-SunRiseSet .astronomical_twilight_begin {
+  color: white;               /* astronomical_twilight_begin color. Default is white. */
+  display: none;
+}
+
+.MMM-SunRiseSet .astronomical_twilight_end {
+  color: white;               /* astronomical_twilight_end color. Default is white. */
+  display: none;
+}
