@@ -1,21 +1,28 @@
 .marquee
 {
-  
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    animation: marquee 50s linear infinite;
-    -webkit-animation: marquee 50s linear infinite;
+  width: 100%;
+  padding-top: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 50s linear infinite;
+  -webkit-animation: marquee 50s linear infinite;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.img {
+  vertical-align: bottom;
 }
 
 .down 
 {
-    color: red;
+  color: red;
 }
 
 .up 
 {
-    color: green;
+  color: green;
 }

@@ -24,7 +24,7 @@ Module.register("stocks", {
 	getDom: function() {
 
         var wrapper = document.createElement("marquee");
-        wrapper.className = 'medium bright';
+        wrapper.className = 'xlarge bold bright';
 
         var count = 0;
         var _this = this;
@@ -39,26 +39,28 @@ Module.register("stocks", {
                 var lastClosePrice = stock.close;
                 var lastPriceFix = stock.latestPrice;
 
-                symbolElement.innerHTML = symbol + ' '; 
+                symbolElement.innerHTML = "<font color=yellow>" + symbol + ' '; 
                 wrapper.appendChild(symbolElement);
 
                 var priceElement = document.createElement("span");
-                priceElement.innerHTML = lastPrice;
+                priceElement.innerHTML = lastPriceFix;
 
                 var changeElement = document.createElement("span");
-                if (changePercentage > 0)
-                    changeElement.className = "up";
-                else 
-                    changeElement.className = "down";
-
+                
                 var change = Math.abs(changeValue, -2);
 
-                changeElement.innerHTML = " " + change;
+                if (changePercentage > 0) {
+                    changeElement.className = "up";
+                    changeElement.innerHTML = " " + '&nbsp;' + "<img src=./modules/stocks/images/green_arrow_up.png>" + '&nbsp;' + change;
+                } else {
+                    changeElement.className = "down";
+                    changeElement.innerHTML = " " + '&nbsp;' + "<img src=./modules/stocks/images/red_arrow_down.png>" + '&nbsp;' + change;
+                }
 
                 var divider = document.createElement("span"); 
                 
                 if (count < _this.result.length - 1)
-                    divider.innerHTML = '  •  ';
+                    divider.innerHTML = '&nbsp;' + ' • ' + '&nbsp;';
 
                 wrapper.appendChild(priceElement);
                 wrapper.appendChild(changeElement);
