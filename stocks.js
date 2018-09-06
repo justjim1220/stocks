@@ -24,7 +24,7 @@ Module.register("stocks", {
 	getDom: function() {
 
         var wrapper = document.createElement("marquee");
-        wrapper.className = 'xlarge bold bright';
+        wrapper.className = "xxlarge bold bright";
 
         var count = 0;
         var _this = this;
@@ -51,10 +51,10 @@ Module.register("stocks", {
 
                 if (changePercentage > 0) {
                     changeElement.className = "up";
-                    changeElement.innerHTML = " " + '&nbsp;' + "<img src=./modules/stocks/images/green_arrow_up.png>" + '&nbsp;' + change;
+                    changeElement.innerHTML = " " + '&nbsp;' + "<img class = image src=./modules/stocks/images/green_arrow_up.png height='65' style='vertical-align:middle'>" + '&nbsp;' + change;
                 } else {
                     changeElement.className = "down";
-                    changeElement.innerHTML = " " + '&nbsp;' + "<img src=./modules/stocks/images/red_arrow_down.png>" + '&nbsp;' + change;
+                    changeElement.innerHTML = " " + '&nbsp;' + "<img class = image src=./modules/stocks/images/red_arrow_down.png height='65' style='vertical-align:middle'>" + '&nbsp;' + change;
                 }
 
                 var divider = document.createElement("span"); 

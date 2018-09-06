@@ -1,7 +1,9 @@
 .marquee
 {
+  font-size: 60px;
+  line-height: 75px;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 50px;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
@@ -13,8 +15,13 @@
   overflow: auto;
 }
 
-.img {
-  vertical-align: bottom;
+.image {
+  display: inline;
+  vertical-align: middle;
+}
+
+.xxlarge {
+  font-size: 75px;
 }
 
 .down 
