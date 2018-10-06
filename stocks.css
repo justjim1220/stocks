@@ -1,35 +1,22 @@
-.marquee
-{
-  font-size: 60px;
-  line-height: 75px;
+
+.marquee {
   width: 100%;
-  padding-top: 50px;
+  margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  animation: marquee 50s linear infinite;
-  -webkit-animation: marquee 50s linear infinite;
-}
-
-.clearfix {
-  overflow: auto;
-}
-
-.image {
-  display: inline;
-  vertical-align: middle;
+  animation: marquee 121s linear infinite;
+  -webkit-animation: marquee 121s linear infinite;
 }
 
 .xxlarge {
   font-size: 75px;
 }
 
-.down 
-{
+.down {
   color: red;
 }
 
-.up 
-{
+.up {
   color: green;
 }
